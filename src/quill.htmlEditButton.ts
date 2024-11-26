@@ -123,11 +123,11 @@ function launchPopupEditor(
   if (closeOnClickOverlay) {
     overlayContainer.onclick = buttonCancel.onclick;
   }
-
+/*
   popupContainer.onclick = function (e) {
     e.preventDefault();
     e.stopPropagation();
-  };
+  };*/
   buttonOk.onclick = function () {
     const container = (editor as any).container as HTMLElement;
     const qlElement = container.querySelector(".ql-editor") as HTMLDivElement;
